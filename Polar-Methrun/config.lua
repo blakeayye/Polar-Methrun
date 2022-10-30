@@ -109,9 +109,9 @@ local MethGuards = {
 }
 
 local MethCivilians = {
-    { coords = vector4(-2084.22, -1018.2, 12.78, 258.77), model = 'mp_m_boatstaff_01' }, -- Config.CivilianAnimation is used
-    { coords = vector4(-2113.34, -1006.53, 9.64, 100.85), model = 'a_f_y_beach_01', animation = 'WORLD_HUMAN_SUNBATHE' }, -- optional
-    { coords = vector4(-2114.71, -1010.66, 9.63, 66.88), model = 'a_f_y_beach_01', animation = 'WORLD_HUMAN_SUNBATHE_BACK' },
+    { coords = vector4(334.42, -210.84, 54.09, 93.23), model = 'mp_m_boatstaff_01' }, -- Config.CivilianAnimation is used
+    { coords = vector4(327.07, -209.98, 54.09, 78.87), model = 'a_f_y_beach_01', animation = 'WORLD_HUMAN_SUNBATHE' }, -- optional
+    { coords = vector4(326.6, -214.55, 54.09, 261.56), model = 'a_f_y_beach_01', animation = 'WORLD_HUMAN_SUNBATHE_BACK' },
 }
 
 Config.CivilianAnimation = "CODE_HUMAN_COWER" -- animation for civilians spawned
@@ -143,8 +143,8 @@ Config.StartItem = 'methbatch' -- item used to start the meth run
 Config.StartItemAmount = 5 -- Amount of config.startitem needed to start the meth run
 
 -- VEHICLE STUFF
-Config.MethVehicle = "karuma", -- vehicle spawn name for meth run car
-   
+Config.MethVehicle = "karuma" -- vehicle spawn name for meth run car
+
 Config.CarSpawns = { -- meth run vehicle spawn locations
     vector4(-327.6, -1524.25, 27.25, 267.9),
     vector4(-312.48, -1529.22, 27.27, 263.87),
@@ -161,7 +161,7 @@ Config.DropOffLabel = "Drop Off Package"
 Config.IconLabelCar = 'fas fa-box'
 
 -- start ped location
-Config.PedLocation = vector4(-322.25, -1545.78, 31.02, 270.41)
+Config.PedLocation = vector4(323.71, -202.35, 54.09, 144.22)
 Config.Ped = "s_m_y_garbage"
 Config.Animation = 'WORLD_HUMAN_AA_COFFEE'
 
@@ -170,8 +170,8 @@ Config.licenseplate = 'METH'
 
 -- finished meth run location
 Config.PackagePedLocations = {
-    vector4(-322.25, -1545.78, 31.02, 270.41),
-    vector4(-322.25, -1545.78, 31.02, 270.41),
+    vector4(329.12, -221.42, 54.09, 6.8),
+    vector4(334.96, -216.98, 54.09, 40.65),
 }
 Config.PedFinish = "s_m_y_garbage"
 Config.AnimationFinish = 'WORLD_HUMAN_AA_COFFEE'
@@ -189,6 +189,10 @@ Config.StopsAmt = {
     ["medium"] = {min = 2, max = 4},
     ["large"] = {min = 4, max = 8},
 }
+
+
+
+Config.CarSpawn = vector4(315.64, -237.53, 53.97, 158.66)
 
 -- PACKAGE DELIVERY LOCATIONS
 Config.Stops = {
@@ -243,11 +247,11 @@ Config.LARGEheader = "Large Route"
 Config.LARGEtext = "Get a route with %s-%s Delivery Locations"
 Config.LARGEicon = "fa-solid fa-user"
 
-Config.PackageGrabTime = math.random(4000, 6000), -- Progress bar time when picking up packages.
-Config.DeliverTime = math.random(4000, 6000), -- Progress bar time when dropping package into buyer's vehicle.
-Config.BuyInfoWait = math.random(4000, 6000),
-Config.JobVehicleWait = math.random(10000, 15000),
-Config.PackagePedWaitTime = math.random(10000, 15000),
-Config.SellLocationWait = math.random(10000, 15000),
-Config.BuyerSpawnWait = math.random(15000, 25000),
+Config.PackageGrabTime = math.random(4000, 6000) -- Progress bar time when picking up packages.
+Config.DeliverTime = math.random(4000, 6000) -- Progress bar time when dropping package into buyer's vehicle.
+Config.BuyInfoWait = math.random(4000, 6000)
+Config.JobVehicleWait = math.random(10000, 15000)
+Config.PackagePedWaitTime = math.random(10000, 15000)
+Config.SellLocationWait = math.random(10000, 15000)
+Config.BuyerSpawnWait = math.random(15000, 25000)
 
